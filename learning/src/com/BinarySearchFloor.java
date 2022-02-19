@@ -33,6 +33,8 @@ public class BinarySearchFloor {
             else {
                 start=mid+1;
             }
+            System.out.print(start);
+            System.out.println(end);
         }
         if (target<arr[0]){
             return -1;

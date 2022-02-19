@@ -2,37 +2,35 @@ package com;
 
 import java.util.Scanner;
 
-public class BinarySearch {
+public class Binaryfirstposition {
     public static void main(String[] args) {
-        int[] arr=new int[5];
+        int[] nums=new int[5];
         int result,target;
         Scanner in= new Scanner(System.in);
-        for (int i = 0; i <arr.length ; i++) {
-            arr[i]=in.nextInt();
+        for (int i = 0; i <nums.length ; i++) {
+            nums[i]=in.nextInt();
         }
         target=in.nextInt();
-        result=binarysearch(arr,target);
+        result= binaryFirstPositions(nums,target);
         System.out.println(result);
     }
-    static int binarysearch(int[] arr,int target){
+    static int binaryFirstPositions(int[] nums, int target){
         int start=0;
-        int end=arr.length-1;
-        int mid;
+        int end=nums.length-1;
+        int mid=0;
         while (start<=end){
             mid=(start+end)/2;     //use mid = start+ ((end-start)/2)  to not exceed int limit
-            if (arr[mid]==target){
-                return mid+1;
-            }
-
-             if (target<arr[mid]){
-                end=mid-1;
+            if (target>nums[mid]){
+                start=mid+1;
             }
             else {
-                start=mid+1;
+                end=mid-1;
+
             }
             System.out.print(start);
             System.out.println(end);
         }
-        return -1;
+        System.out.println(start);
+        return nums[start];
     }
 }
