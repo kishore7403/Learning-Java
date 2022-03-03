@@ -10,6 +10,6 @@ class FinalPerson{
 }
 public class FinalInClass {
     public static void main(String[] args) {
-        FinalPerson p1 =new FinalPerson();
+        FinalPerson p1 =new FinalPerson(10);
     }
 }
