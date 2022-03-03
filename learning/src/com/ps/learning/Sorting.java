@@ -2,7 +2,7 @@ package com.ps.learning;
 
 import java.util.Scanner;
 
-public class sorting {
+public class Sorting {
     public static void main(String[] args) {
         int[] arr=new int[5];
         int n;

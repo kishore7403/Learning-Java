@@ -2,7 +2,7 @@ package com.ps.learning;
 
 import java.util.Scanner;
 
-public class sum {
+public class Sum {
     public static void main(String[] args) {
         int result=sum(1,3);
         System.out.println(result);
