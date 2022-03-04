@@ -9,7 +9,6 @@ public class FirstAndLastSwap {
     }
 
     public static String swapper(String s){
-
         return (s.length()==1) ? s : s.charAt(s.length()-1) + s.substring(1, s.length() - 1) + s.charAt(0);
 
     }
