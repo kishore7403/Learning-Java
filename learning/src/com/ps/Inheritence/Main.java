@@ -56,13 +56,13 @@ public class Main {
 //        d1=null;
 //        System.out.println(d2.name);
 
-//        Dog d1= new Dog();
-//        d1.name="tiger";
-//        d1.weight=20;
-//        Dog d2= null;
-//        d1=d2;
-//        System.out.println(d1);
         Dog d1= new Dog();
-        d1.sound();
+        d1.name="tiger";
+        d1.weight=20;
+        Dog d2= null;
+        d1=d2;
+        System.out.println(d1);
+//        Dog d1= new Dog();
+//        d1.sound();
     }
 }
