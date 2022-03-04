@@ -1,10 +1,9 @@
 package com.ps.learning;
 
 class Cricketer{
-    private String name;
+    String name;
     private int runsScored;
-
-    public void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
@@ -24,12 +23,14 @@ class Cricketer{
     }
 }
 
-public class Oops {
+public class Oops extends Cricketer{
     public static void main(String[] args) {
         Cricketer cricketer= new Cricketer();
-        cricketer.setName("kishore");
-        cricketer.setRunsScored(100);
-        System.out.println(cricketer.getName());
-        System.out.println(cricketer.getRunsScored());
+        cricketer.name="kishore";
+//        cricketer.setName("kishore");
+//        cricketer.setRunsScored(100);
+//        System.out.println(cricketer.getName());
+//        System.out.println(cricketer.getRunsScored());
+
     }
 }
