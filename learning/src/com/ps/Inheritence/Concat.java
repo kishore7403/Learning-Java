@@ -1,7 +1,7 @@
 package com.ps.Inheritence;
 
 class concatination {
-    public String concatinate(String a,String b){
+     String concatinate(String a,String b){
         a=a+"India";
         System.out.println(a);
         return a+b;
