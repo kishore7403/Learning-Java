@@ -6,7 +6,7 @@ interface Runnable{
         System.out.println("Summary");
     }
 }
-class Run implements Runnable{
+class Run  implements Runnable{
     @Override
     public void run() {
         System.out.println("person is running");
