@@ -1,8 +1,6 @@
 package com.ps.homeworks;
 
-import com.ps.learning.StringReplacer;
-
-public class problem2 {
+public class Problem2 {
     public static void main(String[] args) {
         System.out.println("ozeex =>"+ startOZ("ozeex"));
         System.out.println("ozymandias =>"+ startOZ("ozymandias"));
