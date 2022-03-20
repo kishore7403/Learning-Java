@@ -1,6 +1,4 @@
-package com.ps.homeworks;
-
-
+package com.ps.homework;
 
 public class Problem1 {
     public static void main(String[] args) {
@@ -10,6 +8,12 @@ public class Problem1 {
 
     }
     public static String replacer(String s,String target,String replacement){
+        if(s==null || s.isBlank()){
+            return s;
+        }
+        if(s.isEmpty()){
+            return "";
+        }
         return s.replace(target,replacement);
     }
 }
